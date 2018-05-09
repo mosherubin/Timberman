@@ -1,0 +1,1 @@
+g++ test.cpp -lgtest -lgtest_main -I .. -std=c++11 ../Logger/Logger.cpp ../FunctionTrace/FunctionTrace.cpp ../Utilities/Utilities.cpp
