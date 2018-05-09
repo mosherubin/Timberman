@@ -7,6 +7,7 @@
 #include <stdarg.h>
 #endif	/* _WIN32 */
 
+#include <cstring>
 #include "Logger/Logger.h"
 #include "Utilities/Utilities.h"
 #include "utf8/utf8.h"
