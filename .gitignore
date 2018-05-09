@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# add 'unittest/unittest.vcxproj.filters'
+# add 'unittest/unittest.vcxproj.user'
+
+/unittest/Debug
+/unittest/Release
+/**/x64/Debug
+/**/x64/Release
+**/unittest.vcxproj.filters
+**/unittest.vcxproj.user
