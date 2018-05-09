@@ -54,6 +54,14 @@
 							       mvs::Logger::LogLine ("assert", "LOGGER_ASSERT(%s) failed %s(%d)", #_Expression, __FILE__, __LINE__); \
 							   }
 
+#define HEXDUMPTRACE(parms) \
+	do \
+	{ \
+	if (mvs::Logger::IsTracingEnabled ()) \
+		mvs::Logger::HexDumpTrace parms; \
+	} \
+	while ((void) 0, 0)
+
 namespace mvs
 {
 	class Logger

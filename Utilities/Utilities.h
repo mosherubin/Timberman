@@ -9,21 +9,6 @@
 #include <boost/thread.hpp>
 #endif
 
-#if defined (ANDROID)
-	#define CONVERTFORANDROID(e) (Hyperlync::GetSupportsSprintfWideChar () ? (void *) e : (void *) mvs::WcharToUtf8(e).c_str ())
-	#define wstring basic_string<wchar_t>
-#else
-	#define CONVERTFORANDROID(e) e
-#endif
-
-#define HEXDUMPTRACE(parms) \
-	do \
-	{ \
-	if (mvs::Logger::IsTracingEnabled ()) \
-		mvs::Logger::HexDumpTrace parms; \
-	} \
-	while ((void) 0, 0)
-
 namespace mvs
 {
 	void OurSplitPath(const char *path, char *fulldir, char *base);
